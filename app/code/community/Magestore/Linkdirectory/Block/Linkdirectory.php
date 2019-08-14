@@ -17,6 +17,7 @@ class Magestore_Linkdirectory_Block_Linkdirectory extends Mage_Core_Block_Templa
 	
 	public function getListLinkHTML()
 	{
+		
 			if(! intval(Mage::getStoreConfig('linkdirectory/general/customer_enabled')))
 			{	
 				return;
