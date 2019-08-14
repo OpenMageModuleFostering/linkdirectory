@@ -17,12 +17,6 @@ class Magestore_Linkdirectory_Block_Linkdirectory extends Mage_Core_Block_Templa
 	
 	public function getListLinkHTML()
 	{
-		
-			if(! intval(Mage::getStoreConfig('linkdirectory/general/customer_enabled')))
-			{	
-				return;
-			}			
-			
 			$data = $this->getRequest()->getPost();
 			
 			// prepare data to send
@@ -58,11 +52,6 @@ class Magestore_Linkdirectory_Block_Linkdirectory extends Mage_Core_Block_Templa
 	
 	public function getLinkDetailHTML()
 	{
-			if(! intval(Mage::getStoreConfig('linkdirectory/general/customer_enabled')))
-			{	
-				return;
-			}	
-			
 			$link = $this->getRequest()->getParam('link');
 			
 			if(!$link)
