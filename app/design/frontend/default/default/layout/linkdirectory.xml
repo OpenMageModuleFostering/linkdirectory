@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <layout version="0.1.0">
     <default>
-		<reference name="top.links">
+		<reference name="footer_links">
 			<action method="addLink" translate="label title" module="linkdirectory"><label>Links Directory</label><url helper="linkdirectory/getDirectoryUrl"/><title>Links Directory</title><prepare/><urlParams/><position>10</position></action>
 	    </reference>			
 		<reference name="head">
