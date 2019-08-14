@@ -10,7 +10,7 @@
 	</default>
     <modules>
         <Magestore_Linkdirectory>
-            <version>0.2.6</version>
+            <version>0.2.7</version>
         </Magestore_Linkdirectory>
     </modules>
     <frontend>
