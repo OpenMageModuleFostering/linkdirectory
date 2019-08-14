@@ -46,8 +46,21 @@ class Magestore_Linkdirectory_Block_Linkdirectory extends Mage_Core_Block_Templa
 			$url = Mage::helper('linkdirectory')->getServerUrl();
 			
 			$url .= '/linkdirectory/service/getHtmlLinks';
+
+				//use new get content method
+			$options = array('method'=>'post',	
+							'return_info'	=> true,
+							'post_data' => $data,
+							);
+			$content = Mage::helper('linkdirectory/url')->load($url,$options);
 			
-			Mage::helper('linkdirectory')->sendDataToUrl($data,$url);
+			if(isset($content['body']) && $content['body'])
+				echo $content['body'];
+			else
+				echo $this->__('Not found data!');	
+				//End use new get content method
+			
+			//Mage::helper('linkdirectory')->sendDataToUrl($data,$url);
 	}
 	
 	public function getLinkDetailHTML()
@@ -68,8 +81,21 @@ class Magestore_Linkdirectory_Block_Linkdirectory extends Mage_Core_Block_Templa
 			$data['refine_url_view'] = $link;
 			
 			$data['code_authentication'] = Mage::helper('linkdirectory')->getCodeAuthentication();
-						
-			Mage::helper('linkdirectory')->sendDataToUrl($data,$url);
+			
+				//use new get content method
+			$options = array('method'=>'post',	
+							'return_info'	=> true,
+							'post_data' => $data,
+							);
+			$content = Mage::helper('linkdirectory/url')->load($url,$options);
+			
+			if(isset($content['body']) && $content['body'])
+				echo $content['body'];
+			else
+				echo $this->__('Not found data!');	
+				//End use new get content method
+				
+			//Mage::helper('linkdirectory')->sendDataToUrl($data,$url);
 	}
 	
 }
