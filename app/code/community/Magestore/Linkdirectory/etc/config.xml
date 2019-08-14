@@ -1,8 +1,16 @@
 <?xml version="1.0"?>
 <config>
+	<default>
+		<linkdirectory>
+			<general>
+				<customer_enabled>1</customer_enabled>
+			</general>
+			
+		</linkdirectory>
+	</default>
     <modules>
         <Magestore_Linkdirectory>
-            <version>0.1.0</version>
+            <version>0.1.1</version>
         </Magestore_Linkdirectory>
     </modules>
     <frontend>
