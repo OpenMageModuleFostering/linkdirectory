@@ -16,8 +16,11 @@ class Magestore_Linkdirectory_Model_Linkdirectory extends Mage_Core_Model_Abstra
 			
 			$data['image'] = str_replace('default/','',$data['image_file']);
 			
-			Mage::helper('linkdirectory')->createCacheImage($data['image']);
-						
+			if($data['image']!="")
+			{
+				Mage::helper('linkdirectory')->createCacheImage($data['image']);
+			}
+			
 			$url =  Mage::helper('linkdirectory')->getServerUrl();
 							
 			$url .= '/linkdirectory/service/saveSiteInfo/';
