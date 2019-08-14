@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+		<reference name="top.links">
+			<action method="addLink" translate="label title" module="linkdirectory"><label>Links Directory</label><url helper="linkdirectory/getDirectoryUrl"/><title>Links Directory</title><prepare/><urlParams/><position>10</position></action>
+	    </reference>			
+		<reference name="head">
+            <action method="addJs"><script>magestore/linkdirectory.js</script></action>
+			 <action method="addCss"><stylesheet>css/magestore/linkdirectory.css</stylesheet></action>
+        </reference>		
+    </default>
+    <linkdirectory_index_index>
+		<reference name="root">
+			<action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+		</reference>
+        <reference name="content">
+            <block type="linkdirectory/linkdirectory" name="linkdirectory" template="linkdirectory/linkdirectory.phtml" />
+        </reference>
+    </linkdirectory_index_index>
+	
+    <linkdirectory_index_view>
+		<reference name="root">
+			<action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+		</reference>	
+        <reference name="content">
+            <block type="linkdirectory/linkdirectory" name="view" template="linkdirectory/view.phtml" />
+        </reference>
+    </linkdirectory_index_view>	
+	
+</layout> 

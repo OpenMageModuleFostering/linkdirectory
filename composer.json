@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/LinkDirectory",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Create link directory on Magento site. Each site that installs this module will show link of all other site.",
+    "authors": [
+    {
+        "name": "Magestore",
+        "email": "magestore@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

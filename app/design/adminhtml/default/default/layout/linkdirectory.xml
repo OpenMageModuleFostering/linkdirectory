@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+		<reference name="head">
+            <action method="addJs"><script>magestore/linkdirectory.js</script></action>
+			 <action method="addCss"><stylesheet>css/magestore/linkdirectory.css</stylesheet></action>
+        </reference>	
+    </default>
+	
+    <linkdirectory_adminhtml_linkdirectory_index>
+        <reference name="content">
+            <block type="linkdirectory/adminhtml_linkdirectory" name="linkdirectory" />
+        </reference>
+    </linkdirectory_adminhtml_linkdirectory_index>
+</layout>

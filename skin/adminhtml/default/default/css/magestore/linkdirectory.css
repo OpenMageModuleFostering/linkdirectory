@@ -1,0 +1,33 @@
+
+#linkdirectory_general_title,#linkdirectory_general_contact_name,#linkdirectory_general_contact_email,#linkdirectory_general_contact_phone
+{
+	width:600px;
+}
+
+#linkdirectory_general_meta_keywords
+{
+	width:600px;
+}
+
+#linkdirectory_general_meta_description
+{
+	width:600px;
+	height:100px;
+}
+
+#linkdirectory_general_short_description
+{
+	width:600px;
+	height:100px;
+}
+
+#linkdirectory_general_long_description,#linkdirectory_design_css
+{
+	width:600px;
+	height:300px;
+}
+
+#linkdirectory_general_server_url
+{
+	display:block;
+}
