@@ -13,8 +13,11 @@ class Magestore_Linkdirectory_Model_Linkdirectory extends Mage_Core_Model_Abstra
 		try{
 		
 			$data = Mage::helper('linkdirectory')->getDataToSend();
-			
-			$data['image'] = str_replace('default/','',$data['image_file']);
+			$data['image'] = "";
+			if($data['image_file'])
+			{
+				$data['image'] = str_replace('default/','',$data['image_file']);
+			}	
 			
 			if($data['image']!="")
 			{
